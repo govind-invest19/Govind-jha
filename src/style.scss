@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,600,700,800&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap');
+
+$primarycolor:#f5f6fa;
+$secondrycolor:#fff;
+$colorBlue:#596edc;
+$buttonHover:#3e58e0;
+$fontcolorPRimary:#000;
+$fontcolorSecondary:#606060;
+$fontcolor:#fff;
+$nopadding: 0px;
+$primaryFontsize: 16px;
+$primaryfontfamily:"Open Sans";
+$secandryfontfamily:"roboto";
+$radius: 4px;
+$shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.1);
+$border: 1px solid #f1f1f1;
+div, p, span, ul, li, h1, h2, h3, h4, h5, h6
+{
+    font-family: $primaryfontfamily;
+}
+body
+{
+    color:$fontcolorPRimary;
+    font-family:$primaryfontfamily;
+    background-color:$primarycolor;
+    font-weight:300;
+    font-size: $primaryFontsize;
+}
+.MuiFormLabel-root
+{
+    font-family:$primaryfontfamily;
+}
+#content_side_userLS
+{
+    background-image: linear-gradient(145deg, #596edc 3%, #9274ee 98%);color:#fff;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 23px;
+    h1
+    {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 35px;
+        margin-top: 0;
+    }
+    p 
+    {
+        font-size: 24px;
+        font-weight: 300;
+        margin-top:0px;
+        margin-bottom: 40px;
+    }
+    .MuiTypography-body1
+    {
+      font-family: $primaryfontfamily;
+      font-weight: 300;
+      font-size: 13px;
+    }
+    .MuiListItem-gutters, .MuiListItemText-root, .MuiList-padding {
+        padding: 0px;
+        margin: 0px;
+    }
+}
+.formClass 
+{
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .input_field
+    {
+        margin-bottom: 16px;
+    }
+    .MuiFormLabel-root
+    {
+        font-size: 14px;
+    }
+    .MuiInputLabel-shrink
+    {
+        font-size: 12px !important;  
+    }
+    .socialLogin
+    {
+        p
+        {
+            font-size: 12px;
+            color:$fontcolorSecondary;
+        }
+        a
+        {font-size: 12px;
+            color:$colorBlue;
+        }
+    }
+    .FormBtn
+    {
+        background: $colorBlue;
+        color: $secondrycolor;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 10px;
+        &:hover
+        {
+            background: $buttonHover;
+        }
+    }
+
+}
+.form_popup
+{
+    .MuiDialogContent-root
+    {
+        padding: 0px !important;
+    }
+    .formSection
+    {
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,25 +1,22 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './style.scss';
+import {Button, FormControl, TextField, Grid, Container} from '@material-ui/core';
+import CreateDialog from './Components/UserLoginSignUp/Signup';
+import CreateDialogLogin from './Components/UserLoginSignUp/Login';
+import { Icon } from '@material-ui/core';
+import PersonList from './Components/PersonList';
+
 
 function App() {
   return (
+    <Container>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CreateDialog/>
+      <CreateDialogLogin/>
+      <PersonList/>
     </div>
+    </Container>   
   );
 }
 
